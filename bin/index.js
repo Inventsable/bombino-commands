@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const help = require("../lib/help.js");
+const help = require("../lib/help");
+const switcher = require("../lib/switch");
 const yargs = require("yargs");
 const options = yargs
   .option("run", {
@@ -16,15 +17,13 @@ const options = yargs
     describe: "program specifications"
   });
 
-// const greeting = `Hello, ${options.action}!`;
 const bomb = {
-  help: help
+  help: help,
+  switcher: switcher
 };
 
 async function init() {
-  console.log("Hello world!");
-  console.log(process.argv);
-  const actions = ["help", "register"];
+  const actions = ["help", "switcher"];
   actions.forEach(action => {
     if (new RegExp(`${action}`).test(process.argv)) bomb[action]();
   });

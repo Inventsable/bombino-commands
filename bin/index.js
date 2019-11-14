@@ -6,7 +6,7 @@ const update = require("../lib/update");
 
 const bomb = {
   help: help,
-  switcher: switcher,
+  switch: switcher,
   update: update
 };
 

@@ -7,24 +7,26 @@ npm install bombino-commands
 
 # Within root of bombino panel
 npm run help
-npm run register
 npm run switch
-npm run sign
 npm run update
+# npm run sign
+# npm run register
 
 # Within root of Adobe panel if manually installed
 bombino-commands help
-bombino-commands register
 bombino-commands switch
-bombino-commands sign
 bombino-commands update
+# bombino-commands register
+# bombino-commands sign
 
 # Additional commands
-bombino-commands typescript
-bombino-commands inject
+# bombino-commands typescript
+# bombino-commands inject
+
+# !!! Commented out commands are still in construction
 ```
 
-## Commands (will update to bombino soon)
+## Commands (will update for bombino soon)
 
 ### `npm run help`:
 

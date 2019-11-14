@@ -1,5 +1,10 @@
 /* eslint-disable */
 
+// NOT IN USE
+// This is the old version of each command, in one bloated file
+// Should separate for clear distinction between commands,
+// make these more versatile, dynamic and easier to add to
+
 const chalk = require("chalk");
 const fse = require("fs-extra");
 const fs = require("fs");
@@ -471,14 +476,10 @@ function signCommands(path, rootpath, password, includeZip) {
     certInfo = certInfo.split(";");
     shell.cd(`..`);
     console.log(
-      `${osPrefix}ZXPSignCmd -selfSignedCert ${certInfo[0]} ${certInfo[1]} ${
-        certInfo[2]
-      } ${certInfo[3]} ${password} ./${rootpath}/archive/temp1.p12`
+      `${osPrefix}ZXPSignCmd -selfSignedCert ${certInfo[0]} ${certInfo[1]} ${certInfo[2]} ${certInfo[3]} ${password} ./${rootpath}/archive/temp1.p12`
     );
     shell.exec(
-      `${osPrefix}ZXPSignCmd -selfSignedCert ${certInfo[0]} ${certInfo[1]} ${
-        certInfo[2]
-      } ${certInfo[3]} ${password} ./${rootpath}/archive/temp1.p12`
+      `${osPrefix}ZXPSignCmd -selfSignedCert ${certInfo[0]} ${certInfo[1]} ${certInfo[2]} ${certInfo[3]} ${password} ./${rootpath}/archive/temp1.p12`
     );
     setTimeout(() => {
       console.log(

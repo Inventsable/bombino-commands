@@ -2,29 +2,16 @@
 
 const help = require("../lib/help");
 const switcher = require("../lib/switch");
-const yargs = require("yargs");
-const options = yargs
-  .option("run", {
-    alias: "r",
-    describe: "run your program"
-  })
-  .option("path", {
-    alias: "p",
-    describe: "provide a path to file"
-  })
-  .option("spec", {
-    alias: "s",
-    describe: "program specifications"
-  });
+const update = require("../lib/update");
 
 const bomb = {
   help: help,
-  switcher: switcher
+  switcher: switcher,
+  update: update
 };
 
 async function init() {
-  const actions = ["help", "switcher"];
-  actions.forEach(action => {
+  Object.keys(bomb).forEach(action => {
     if (new RegExp(`${action}`).test(process.argv)) bomb[action]();
   });
 }

@@ -9,21 +9,15 @@ npm install bombino-commands
 npm run help
 npm run switch
 npm run update
-# npm run sign
-# npm run register
+npm run sign
+npm run register
 
 # Within root of Adobe panel if manually installed
-bombino-commands help
-bombino-commands switch
-bombino-commands update
-# bombino-commands register
-# bombino-commands sign
-
-# Additional commands
-# bombino-commands typescript
-# bombino-commands inject
-
-# !!! Commented out commands are still in construction
+bombino-cmd help
+bombino-cmd switch
+bombino-cmd update
+bombino-cmd register
+bombino-cmd sign
 ```
 
 ## Commands (will update for bombino soon)
@@ -36,14 +30,20 @@ bombino-commands update
 
 ### `npm run typescript`:
 
+> Not yet made, thinking about it
+
 - Prompts the user if they want to configure the current panel for instant Typescript support
 - If yes, locate the target directory, select any apps, then automate the process of downloading the npm package and creating `tsconfig` files for you, prompting the user to manually run `tsc: watch` afterward.
 
 ### `npm run inject`:
 
+> Not yet made, thinking about it
+
 - Prompts the user if they want to inject Adobe-specific files into the current directory, such as `/CSXS/manifest.xml`, `CSInterface.js`, or `.debug`
 
 ### `npm run sign`:
+
+> 🚩 This command only works if ZXPSignCmd.exe is located in the parent folder (eg .../cep/extensions/)
 
 - Duplicate and "stage" an extension folder to a temporary location, removing any hidden files or folders to ensure the certificate doesn't silently fail
 - Generate a temporary certificate
@@ -52,7 +52,7 @@ bombino-commands update
 - Place the resulting `[name][version].zxp` into `./archive` of your current panel (and create this folder if it doesn't already exist). If `[name][version].zxp` already exists, overwrite it
 - Delete the duplicate directory
 
-![](https://thumbs.gfycat.com/SomeRequiredBordercollie-size_restricted.gif)
+![](https://thumbs.gfycat.com/CrazyMerryIlsamochadegu-size_restricted.gif)
 
 ### `npm run switch`:
 
@@ -63,7 +63,7 @@ bombino-commands update
 - If switching contexts, automatically adjusts `manifest.xml` for you (no need to manually open it and switch every time)
 - Prompt with contextual information about the next steps once the confirmation is made
 
-![](https://thumbs.gfycat.com/FrankDeadAardwolf-size_restricted.gif)
+![](https://thumbs.gfycat.com/DemandingPaltryAlbatross-size_restricted.gif)
 
 ### `npm run update`:
 
@@ -72,13 +72,15 @@ bombino-commands update
 - Auto-suggest the update as the next sequential number but allow any number to be entered
 - Rewrite the version number within `manifest.xml` and `package.json` with the updated semantic version
 
-![](https://thumbs.gfycat.com/SlimyAssuredAchillestang-size_restricted.gif)
+![](https://thumbs.gfycat.com/CreepyLastBittern-size_restricted.gif)
 
 ### `npm run register`:
 
 - Report the current string of text to use for `npm run sign` certification
 - Prompt the user for COUNTRY, STATE/LOCALE, ORGANIZATION, and COMMON NAME
 - Write a new file (or overwrite previous) containing country, locale, organization and user
+
+![](https://thumbs.gfycat.com/LonelyFemaleBobolink-size_restricted.gif)
 
 ## Usage
 

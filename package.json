@@ -1,21 +1,23 @@
 {
   "name": "bombino-commands",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Adobe CEP utility commands to supercharge dev workflow available through Node scripts or via terminal",
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "help": "./bin/index.js"
+    "bombino-cmd": "./bin/index.js"
   },
   "keywords": [],
+  "homepage": "https://github.com/Inventsable/bombino-commands",
+  "repository": "Inventsable/bombino-commands",
   "author": {
     "name": "Tom Scharstein",
     "email": "tom@inventsable.cc",
     "url": "https://www.inventsable.cc"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "boxen": "^4.1.0",
     "chalk": "^3.0.0",

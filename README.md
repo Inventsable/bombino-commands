@@ -52,7 +52,7 @@ bombino-cmd sign
 - Place the resulting `[name][version].zxp` into `./archive` of your current panel (and create this folder if it doesn't already exist). If `[name][version].zxp` already exists, overwrite it
 - Delete the duplicate directory
 
-![](https://thumbs.gfycat.com/CrazyMerryIlsamochadegu-size_restricted.gif)
+![](https://thumbs.gfycat.com/MintyGlossyBobolink-size_restricted.gif)
 
 ### `npm run switch`:
 

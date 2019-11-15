@@ -80,7 +80,9 @@ bombino-commands update
 - Prompt the user for COUNTRY, STATE/LOCALE, ORGANIZATION, and COMMON NAME
 - Write a new file (or overwrite previous) containing country, locale, organization and user
 
-## Usage (assuming bombino default template)
+## Usage
+
+### (Assuming bombino default template)
 
 When you first create the template or need to start coding, you need `npm run serve` to launch the dev server and see your code reflect in the panel. If you want to build and sign an extension, then at any time you do so by running:
 

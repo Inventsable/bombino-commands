@@ -1,18 +1,16 @@
 #!/usr/bin/env node
 
-const help = require("../lib/help");
-const switcher = require("../lib/switch");
-const update = require("../lib/update");
-
-const bomb = {
-  help: help,
-  switch: switcher,
-  update: update
+const cmds = {
+  help: require("../lib/help"),
+  switch: require("../lib/switch"),
+  update: require("../lib/update"),
+  register: require("../lib/register"),
+  sign: require("../lib/sign")
 };
 
 async function init() {
-  Object.keys(bomb).forEach(action => {
-    if (new RegExp(`${action}`).test(process.argv)) bomb[action]();
+  Object.keys(cmds).forEach(action => {
+    if (new RegExp(`${action}`).test(process.argv)) cmds[action]();
   });
 }
 

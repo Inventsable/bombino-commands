@@ -20,7 +20,7 @@ bombino-cmd register
 bombino-cmd sign
 ```
 
-## Commands (will update for bombino soon)
+## Commands
 
 ### `npm run help`:
 
@@ -28,18 +28,9 @@ bombino-cmd sign
 
 ![](./assets/help.png)
 
-### `npm run typescript`:
+### ~~`npm run typescript`~~:
 
-> Not yet made, thinking about it
-
-- Prompts the user if they want to configure the current panel for instant Typescript support
-- If yes, locate the target directory, select any apps, then automate the process of downloading the npm package and creating `tsconfig` files for you, prompting the user to manually run `tsc: watch` afterward.
-
-### `npm run inject`:
-
-> Not yet made, thinking about it
-
-- Prompts the user if they want to inject Adobe-specific files into the current directory, such as `/CSXS/manifest.xml`, `CSInterface.js`, or `.debug`
+> Deprecated! Typescript support is added by default to all templates, awaiting the `tsc: watch` task on `tsconfig.json` from the user. For injection into any project use [scriptopia](https://github.com/Inventsable/scriptopia) instead, to see the results try [ovid-editor](https://ovid-editor.web.app/).
 
 ### `npm run sign`:
 

@@ -5,7 +5,7 @@ const cmds = {
   switch: require("../lib/switch"),
   update: require("../lib/update"),
   register: require("../lib/register"),
-  sign: require("../lib/sign")
+  sign: require("../lib/sign"),
 };
 
 // What is going on here? Commands are suddenly firing arbitrarily.
@@ -18,7 +18,7 @@ async function init() {
   else if (/switch/.test(process.argv)) cmds.switch();
   else if (/register/.test(process.argv)) cmds.register();
   else if (/sign/.test(process.argv)) cmds.sign();
-  else if (/update/.test(process.argv)) cmds.update()
+  else if (/update/.test(process.argv)) cmds.update();
 }
 
 init();

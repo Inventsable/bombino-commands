@@ -1,6 +1,6 @@
 {
   "name": "bombino-commands",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Adobe CEP utility commands to supercharge dev workflow available through Node scripts or via terminal",
   "main": "bin/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "archiver": "^5.2.0",
     "boxen": "^4.1.0",
     "chalk": "^3.0.0",
     "fs-extra": "^8.1.0",
